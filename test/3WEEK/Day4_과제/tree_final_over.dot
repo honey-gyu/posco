@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="HANDSET_WC95 <= 0.5\ngini = 0.5\nsamples = 721\nvalue = [361, 360]\nclass = Good", fillcolor="#fffffe"] ;
+1 [label="HANDSET_ASAD170 <= 0.5\ngini = 0.497\nsamples = 665\nvalue = [305, 360]\nclass = Bad", fillcolor="#e1f0fb"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="HANDSET_S80 <= 0.5\ngini = 0.483\nsamples = 609\nvalue = [249, 360]\nclass = Bad", fillcolor="#c2e1f7"] ;
+1 -> 2 ;
+3 [label="HANDSET_BS110 <= 0.5\ngini = 0.444\nsamples = 524\nvalue = [174, 350]\nclass = Bad", fillcolor="#9bcef2"] ;
+2 -> 3 ;
+4 [label="gini = 0.382\nsamples = 444\nvalue = [114, 330]\nclass = Bad", fillcolor="#7dbfee"] ;
+3 -> 4 ;
+5 [label="gini = 0.375\nsamples = 80\nvalue = [60, 20]\nclass = Good", fillcolor="#eeab7b"] ;
+3 -> 5 ;
+6 [label="PEAK_CALLS_NO <= 253.0\ngini = 0.208\nsamples = 85\nvalue = [75, 10]\nclass = Good", fillcolor="#e89253"] ;
+2 -> 6 ;
+7 [label="gini = 0.061\nsamples = 63\nvalue = [61, 2]\nclass = Good", fillcolor="#e6853f"] ;
+6 -> 7 ;
+8 [label="gini = 0.463\nsamples = 22\nvalue = [14, 8]\nclass = Good", fillcolor="#f4c9aa"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 56\nvalue = [56, 0]\nclass = Good", fillcolor="#e58139"] ;
+1 -> 9 ;
+10 [label="gini = 0.0\nsamples = 56\nvalue = [56, 0]\nclass = Good", fillcolor="#e58139"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}

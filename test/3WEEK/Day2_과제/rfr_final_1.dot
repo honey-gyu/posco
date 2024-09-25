@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="BMI <= 26.85\nsquared_error = 5835.168\nsamples = 199\nvalue = 143.861", fillcolor="#f5ceb2"] ;
+1 [label="LTG <= 4.644\nsquared_error = 3349.897\nsamples = 128\nvalue = 113.034", fillcolor="#f9e4d4"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="LTG <= 4.167\nsquared_error = 2106.66\nsamples = 86\nvalue = 93.127", fillcolor="#fcf2ea"] ;
+1 -> 2 ;
+3 [label="squared_error = 1364.836\nsamples = 35\nvalue = 74.783", fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label="squared_error = 2223.101\nsamples = 51\nvalue = 106.549", fillcolor="#fae8db"] ;
+2 -> 4 ;
+5 [label="TCH <= 5.815\nsquared_error = 3308.834\nsamples = 42\nvalue = 156.523", fillcolor="#f3c5a3"] ;
+1 -> 5 ;
+6 [label="squared_error = 2418.942\nsamples = 31\nvalue = 141.804", fillcolor="#f5cfb4"] ;
+5 -> 6 ;
+7 [label="squared_error = 2886.265\nsamples = 11\nvalue = 210.143", fillcolor="#eb9e67"] ;
+5 -> 7 ;
+8 [label="BP <= 83.5\nsquared_error = 5036.401\nsamples = 71\nvalue = 206.422", fillcolor="#eca16b"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="squared_error = 3456.222\nsamples = 11\nvalue = 120.667", fillcolor="#f8decc"] ;
+8 -> 9 ;
+10 [label="BMI <= 30.85\nsquared_error = 3822.325\nsamples = 60\nvalue = 221.207", fillcolor="#e9965b"] ;
+8 -> 10 ;
+11 [label="squared_error = 4360.883\nsamples = 36\nvalue = 200.962", fillcolor="#eca571"] ;
+10 -> 11 ;
+12 [label="squared_error = 1508.49\nsamples = 24\nvalue = 251.286", fillcolor="#e58139"] ;
+10 -> 12 ;
+}

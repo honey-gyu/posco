@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="HANDSET_ASAD90 <= 0.5\ngini = 0.331\nsamples = 651\nvalue = [515, 136]\nclass = Good", fillcolor="#eca26d"] ;
+1 [label="DROPPED_CALLS <= 11.5\ngini = 0.273\nsamples = 608\nvalue = [509, 99]\nclass = Good", fillcolor="#ea9a60"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="HANDSET_CAS30 <= 0.5\ngini = 0.233\nsamples = 586\nvalue = [507, 79]\nclass = Good", fillcolor="#e99558"] ;
+1 -> 2 ;
+3 [label="PEAK_CALLS_TIME <= 94.2\ngini = 0.194\nsamples = 562\nvalue = [501, 61]\nclass = Good", fillcolor="#e89051"] ;
+2 -> 3 ;
+4 [label="gini = 0.499\nsamples = 46\nvalue = [24, 22]\nclass = Good", fillcolor="#fdf5ef"] ;
+3 -> 4 ;
+5 [label="gini = 0.14\nsamples = 516\nvalue = [477, 39]\nclass = Good", fillcolor="#e78b49"] ;
+3 -> 5 ;
+6 [label="gini = 0.375\nsamples = 24\nvalue = [6, 18]\nclass = Bad", fillcolor="#7bbeee"] ;
+2 -> 6 ;
+7 [label="gini = 0.165\nsamples = 22\nvalue = [2, 20]\nclass = Bad", fillcolor="#4da7e8"] ;
+1 -> 7 ;
+8 [label="CUSTOMER_ID_K207080 <= 0.5\ngini = 0.24\nsamples = 43\nvalue = [6, 37]\nclass = Bad", fillcolor="#59ade9"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="CUSTOMER_ID_K199310 <= 0.5\ngini = 0.21\nsamples = 42\nvalue = [5, 37]\nclass = Bad", fillcolor="#54aae9"] ;
+8 -> 9 ;
+10 [label="CUSTOMER_ID_K161250 <= 0.5\ngini = 0.176\nsamples = 41\nvalue = [4, 37]\nclass = Bad", fillcolor="#4ea8e8"] ;
+9 -> 10 ;
+11 [label="gini = 0.139\nsamples = 40\nvalue = [3, 37]\nclass = Bad", fillcolor="#49a5e7"] ;
+10 -> 11 ;
+12 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = Good", fillcolor="#e58139"] ;
+10 -> 12 ;
+13 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = Good", fillcolor="#e58139"] ;
+9 -> 13 ;
+14 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = Good", fillcolor="#e58139"] ;
+8 -> 14 ;
+}
